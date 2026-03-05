@@ -8,10 +8,8 @@ export default function Home() {
       </h1>
       <div className="mt-8 text-lg leading-relaxed text-secondary">
         <div>
-          <p>builder, traveler, and indie dev</p>
           <p>
-            building products and agents at the intersection of AI and everyday
-            tools
+            building products at the intersection of ai and everyday tools
           </p>
           <p>
             founder of{" "}
@@ -23,7 +21,7 @@ export default function Home() {
             >
               climbing cat
             </a>{" "}
-            and CTO at{" "}
+            and cto at{" "}
             <a
               href="https://devilchild.studio"
               target="_blank"
@@ -46,7 +44,7 @@ export default function Home() {
               >
                 ghostwriter
               </a>{" "}
-              — an AI linkedin post generator
+              — an ai linkedin post generator
             </li>
             <li>
               <strong className="text-foreground">undertone</strong> — a voice
@@ -55,8 +53,7 @@ export default function Home() {
           </ul>
         </div>
         <p className="mt-6">
-          i also write about the things i learn building software and the
-          places i&apos;ve traveled
+          i write about software, ai, and the places i&apos;ve been
         </p>
       </div>
       <div className="mt-10 flex flex-wrap gap-4">
@@ -64,7 +61,7 @@ export default function Home() {
           href="/blog"
           className="inline-flex items-center gap-1 rounded-full bg-foreground px-5 py-2.5 text-sm font-medium text-background transition-colors hover:bg-foreground/80"
         >
-          read the blog &rarr;
+          tech blog &rarr;
         </Link>
         <Link
           href="/travel"
