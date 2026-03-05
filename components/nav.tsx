@@ -19,7 +19,7 @@ export function Nav() {
           href="/"
           className="text-base font-semibold tracking-tight text-foreground transition-colors hover:text-accent"
         >
-          Nate Ksou
+          Nathan Sou
         </Link>
         <div className="flex gap-6">
           {links.map(({ href, label }) => (

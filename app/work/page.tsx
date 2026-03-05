@@ -4,7 +4,7 @@ import { WaitlistForm } from "@/components/waitlist-form";
 export const metadata: Metadata = {
   title: "Work",
   description:
-    "Products by Nate Ksou — Haku's Playground, Undertone, Ghostwriterrr, and Typeless.",
+    "Products by Nathan Sou — Haku's Playground, Undertone, Ghostwriterrr, and Typeless.",
 };
 
 const products = [

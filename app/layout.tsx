@@ -24,25 +24,25 @@ const jetbrains = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://nathansou.com"),
   title: {
-    default: "Nate Ksou — Builder, Traveler, Indie Dev",
-    template: "%s | Nate Ksou",
+    default: "Nathan Sou — Builder, Traveler, Indie Dev",
+    template: "%s | Nathan Sou",
   },
   description:
-    "Personal site of Nate Ksou — founder of Climbing Cat, CTO at Devil Child Studio. Travel guides, tech blog, and product showcase.",
+    "Personal site of Nathan Sou — founder of Climbing Cat, CTO at Devil Child Studio. Travel guides, tech blog, and product showcase.",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://nathansou.com",
-    siteName: "Nate Ksou",
-    title: "Nate Ksou — Builder, Traveler, Indie Dev",
+    siteName: "Nathan Sou",
+    title: "Nathan Sou — Builder, Traveler, Indie Dev",
     description:
-      "Personal site of Nate Ksou — founder of Climbing Cat, CTO at Devil Child Studio. Travel guides, tech blog, and product showcase.",
+      "Personal site of Nathan Sou — founder of Climbing Cat, CTO at Devil Child Studio. Travel guides, tech blog, and product showcase.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nate Ksou — Builder, Traveler, Indie Dev",
+    title: "Nathan Sou — Builder, Traveler, Indie Dev",
     description:
-      "Personal site of Nate Ksou — founder of Climbing Cat, CTO at Devil Child Studio.",
+      "Personal site of Nathan Sou — founder of Climbing Cat, CTO at Devil Child Studio.",
   },
   robots: {
     index: true,
