@@ -35,34 +35,12 @@ export default function Home() {
         <p>Right now I&apos;m building:</p>
         <ul className="list-disc space-y-2 pl-6">
           <li>
-            <a
-              href="https://hakus-playground.vercel.app"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-semibold text-foreground underline underline-offset-2 hover:text-accent"
-            >
-              Haku&apos;s Playground
-            </a>{" "}
-            — an AI education app
-          </li>
-          <li>
-            <strong className="text-foreground">undertone</strong> — a voice
-            assistant journal
-          </li>
-          <li>
             <strong className="text-foreground">Ghostwriterrr</strong> — an AI
             LinkedIn post generator
           </li>
           <li>
-            <a
-              href="https://apps.apple.com/us/app/typeless-keyboard-shortcuts/id6742476791"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-semibold text-foreground underline underline-offset-2 hover:text-accent"
-            >
-              Typeless
-            </a>{" "}
-            — iOS keyboard shortcuts
+            <strong className="text-foreground">undertone</strong> — a voice
+            assistant journal
           </li>
         </ul>
         <p>
