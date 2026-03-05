@@ -16,11 +16,11 @@ export default function BlogPage() {
       <div className="mx-auto max-w-[680px] px-6 py-16 md:py-24 md:px-8">
         <h1 className="font-serif text-4xl font-bold tracking-tight">blog</h1>
         <p className="mt-6 text-lg leading-relaxed text-secondary">
-          coming soon. I&apos;ll be writing about building with AI, indie dev
-          life, and the tools I use to ship fast.
+          coming soon. i&apos;ll be writing about building with AI, indie dev
+          life, and the tools i use to ship fast.
         </p>
         <p className="mt-4 text-lg text-secondary">
-          want to know when I publish?{" "}
+          want to know when i publish?{" "}
           <a
             href="https://x.com"
             className="text-accent underline underline-offset-2"

@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="mx-auto max-w-[680px] px-6 py-16 md:py-24 md:px-8">
       <h1 className="font-serif text-4xl font-bold tracking-tight md:text-5xl">
-        hey, I&apos;m Nate.
+        hey, i&apos;m nate.
       </h1>
       <div className="mt-8 text-lg leading-relaxed text-secondary">
         <div>
@@ -35,11 +35,18 @@ export default function Home() {
           </p>
         </div>
         <div className="mt-6">
-          <p>right now I&apos;m building:</p>
+          <p>right now i&apos;m building:</p>
           <ul className="list-disc space-y-1 pl-6">
             <li>
-              <strong className="text-foreground">Ghostwriterrr</strong> — an AI
-              linkedin post generator
+              <a
+                href="https://www.ghostwriterrr.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-foreground underline underline-offset-2 hover:text-accent"
+              >
+                ghostwriterrr
+              </a>{" "}
+              — an AI linkedin post generator
             </li>
             <li>
               <strong className="text-foreground">undertone</strong> — a voice
@@ -48,8 +55,8 @@ export default function Home() {
           </ul>
         </div>
         <p className="mt-6">
-          I also write about the things I learn building software and the
-          places I&apos;ve traveled
+          i also write about the things i learn building software and the
+          places i&apos;ve traveled
         </p>
       </div>
       <div className="mt-10 flex flex-wrap gap-4">

@@ -27,7 +27,7 @@ const products = [
     waitlist: true,
   },
   {
-    name: "Ghostwriterrr",
+    name: "ghostwriterrr",
     studio: "devil child studio",
     description:
       "Write, schedule, and publish LinkedIn posts with AI. Your ghostwriter for professional content. Built by devil child studio. Launching end of March 2026.",
