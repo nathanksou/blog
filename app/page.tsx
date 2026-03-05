@@ -23,7 +23,14 @@ export default function Home() {
             climbing cat
           </a>{" "}
           and CTO at{" "}
-          <strong className="text-foreground">devil child studio</strong>
+          <a
+            href="https://devilchild.studio"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-foreground underline underline-offset-2 hover:text-accent"
+          >
+            devil child studio
+          </a>
         </p>
         <p>Right now I&apos;m building:</p>
         <ul className="list-disc space-y-2 pl-6">
