@@ -4,9 +4,9 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const links = [
-  { href: "/blog", label: "Blog" },
-  { href: "/travel", label: "Travel" },
-  { href: "/work", label: "Projects" },
+  { href: "/blog", label: "blog" },
+  { href: "/travel", label: "travel" },
+  { href: "/work", label: "projects" },
 ];
 
 export function Nav() {
@@ -19,7 +19,7 @@ export function Nav() {
           href="/"
           className="text-base font-semibold tracking-tight text-foreground transition-colors hover:text-accent"
         >
-          Nathan Sou
+          nathanksou.dev
         </Link>
         <div className="flex gap-6">
           {links.map(({ href, label }) => (

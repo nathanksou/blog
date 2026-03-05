@@ -3,7 +3,7 @@ import { getBlogPosts } from "@/lib/mdx";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Blog",
+  title: "blog",
   description:
     "Writing about building with AI, indie dev life, and the tools I use to ship fast.",
 };
@@ -14,20 +14,20 @@ export default function BlogPage() {
   if (posts.length === 0) {
     return (
       <div className="mx-auto max-w-[680px] px-6 py-16 md:py-24 md:px-8">
-        <h1 className="font-serif text-4xl font-bold tracking-tight">Blog</h1>
+        <h1 className="font-serif text-4xl font-bold tracking-tight">blog</h1>
         <p className="mt-6 text-lg leading-relaxed text-secondary">
-          Coming soon. I&apos;ll be writing about building with AI, indie dev
+          coming soon. I&apos;ll be writing about building with AI, indie dev
           life, and the tools I use to ship fast.
         </p>
         <p className="mt-4 text-lg text-secondary">
-          Want to know when I publish?{" "}
+          want to know when I publish?{" "}
           <a
             href="https://x.com"
             className="text-accent underline underline-offset-2"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Follow me on X &rarr;
+            follow me on X &rarr;
           </a>
         </p>
       </div>
@@ -36,7 +36,7 @@ export default function BlogPage() {
 
   return (
     <div className="mx-auto max-w-[1200px] px-6 py-16 md:py-24 md:px-8">
-      <h1 className="font-serif text-4xl font-bold tracking-tight">Blog</h1>
+      <h1 className="font-serif text-4xl font-bold tracking-tight">blog</h1>
       <div className="mt-10 space-y-6">
         {posts.map((post) => (
           <Link

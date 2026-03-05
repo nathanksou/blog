@@ -58,9 +58,9 @@ const statusColors: Record<string, string> = {
 export default function WorkPage() {
   return (
     <div className="mx-auto max-w-[1200px] px-6 py-16 md:py-24 md:px-8">
-      <h1 className="font-serif text-4xl font-bold tracking-tight">Projects</h1>
+      <h1 className="font-serif text-4xl font-bold tracking-tight">projects</h1>
       <p className="mt-4 text-lg text-secondary">
-        Products I&apos;m building across{" "}
+        products I&apos;m building across{" "}
         <a
           href="https://climbingcat.dev"
           target="_blank"

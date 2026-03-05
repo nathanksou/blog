@@ -14,10 +14,10 @@ export default function TravelPage() {
   return (
     <div className="mx-auto max-w-[1200px] px-6 py-16 md:py-24 md:px-8">
       <h1 className="font-serif text-4xl font-bold tracking-tight">
-        Travel Guides
+        travel guides
       </h1>
       <p className="mt-4 text-lg text-secondary">
-        City guides with personal recommendations, local tips, and the best
+        city guides with personal recommendations, local tips, and the best
         places to eat.
       </p>
       <div className="mt-10 grid gap-4 sm:grid-cols-2">
