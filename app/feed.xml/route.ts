@@ -1,8 +1,8 @@
-import { getTravelGuides, getBlogPosts } from "@/lib/mdx";
+import { gettravelGuides, getBlogPosts } from "@/lib/mdx";
 
 export async function GET() {
   const baseUrl = "https://nathansou.com";
-  const guides = getTravelGuides();
+  const guides = gettravelGuides();
   const posts = getBlogPosts();
 
   const items = [
@@ -13,7 +13,7 @@ export async function GET() {
       date: new Date(post.frontmatter.date).toUTCString(),
     })),
     ...guides.map((guide) => ({
-      title: `${guide.frontmatter.title} Travel Guide`,
+      title: `${guide.frontmatter.title} travel Guide`,
       description: guide.frontmatter.description,
       url: `${baseUrl}/travel/${guide.slug}`,
       date: new Date(guide.frontmatter.lastUpdated).toUTCString(),
@@ -23,9 +23,9 @@ export async function GET() {
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Nathan Sou</title>
+    <title>nathan sou</title>
     <link>${baseUrl}</link>
-    <description>Travel guides, tech blog, and product showcase by Nathan Sou.</description>
+    <description>travel guides, tech blog, and product showcase by nathan sou.</description>
     <language>en-us</language>
     <atom:link href="${baseUrl}/feed.xml" rel="self" type="application/rss+xml"/>
     ${items

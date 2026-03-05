@@ -3,7 +3,7 @@ import type { NextRequest } from "next/server";
 
 export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url);
-  const title = searchParams.get("title") || "Nathan Sou";
+  const title = searchParams.get("title") || "nathan sou";
 
   return new ImageResponse(
     (

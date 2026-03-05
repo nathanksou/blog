@@ -4,19 +4,19 @@ import { WaitlistForm } from "@/components/waitlist-form";
 export const metadata: Metadata = {
   title: "Projects",
   description:
-    "products by Nathan Sou — Haku's Playground, undertone, ghostwriter, and Typeless.",
+    "products by nathan sou — haku's playground, undertone, ghostwriter, and typeless.",
 };
 
 const products = [
   {
-    name: "Haku's Playground",
-    description: "a playful guide to AI",
+    name: "haku's playground",
+    description: "a playful guide to ai",
     cta: { label: "learn more", href: "https://hakus-playground.vercel.app" },
     waitlist: false,
   },
   {
     name: "ghostwriter",
-    description: "write, schedule, and publish linkedin posts with AI",
+    description: "write, schedule, and publish linkedin posts with ai",
     cta: { label: "try it", href: "https://www.ghostwriterrr.com" },
     waitlist: false,
   },
@@ -28,8 +28,8 @@ const products = [
     waitlist: true,
   },
   {
-    name: "Typeless",
-    description: "keyboard shortcuts for iOS",
+    name: "typeless",
+    description: "keyboard shortcuts for ios",
     cta: {
       label: "app store",
       href: "https://apps.apple.com/us/app/typeless-keyboard-shortcuts/id6742476791",

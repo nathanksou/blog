@@ -33,7 +33,7 @@ export function WaitlistForm({ product }: { product: string }) {
   if (status === "success") {
     return (
       <p className="mt-4 text-sm font-medium text-green-700">
-        You&apos;re on the list! We&apos;ll be in touch.
+        you&apos;re on the list! we&apos;ll be in touch.
       </p>
     );
   }
@@ -53,11 +53,11 @@ export function WaitlistForm({ product }: { product: string }) {
         disabled={status === "loading"}
         className="h-10 rounded-lg bg-foreground px-4 text-sm font-medium text-background transition-colors hover:bg-foreground/80 disabled:opacity-50"
       >
-        {status === "loading" ? "Joining..." : "Join Waitlist"}
+        {status === "loading" ? "joining..." : "join waitlist"}
       </button>
       {status === "error" && (
         <p className="self-center text-sm text-red-600">
-          Something went wrong. Try again.
+          something went wrong. try again.
         </p>
       )}
     </form>
