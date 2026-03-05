@@ -7,13 +7,9 @@ export default function Home() {
         Hey, I&apos;m Nate.
       </h1>
       <div className="mt-8 space-y-6 text-lg leading-relaxed text-secondary">
-        <p>builder, traveler, and indie dev</p>
         <p>
-          building products and agents at the intersection of AI and everyday
-          tools
-        </p>
-        <p>
-          founder of{" "}
+          builder, traveler, and indie dev. building products and agents at the
+          intersection of AI and everyday tools. founder of{" "}
           <a
             href="https://climbingcat.dev"
             target="_blank"
@@ -31,8 +27,8 @@ export default function Home() {
           >
             devil child studio
           </a>
+          . right now I&apos;m building:
         </p>
-        <p>Right now I&apos;m building:</p>
         <ul className="list-disc space-y-2 pl-6">
           <li>
             <strong className="text-foreground">Ghostwriterrr</strong> — an AI
@@ -44,8 +40,8 @@ export default function Home() {
           </li>
         </ul>
         <p>
-          I also write about the places I travel and the things I learn building
-          software.
+          I also write about the things I learn building software and the
+          places I&apos;ve traveled.
         </p>
       </div>
       <div className="mt-10 flex flex-wrap gap-4">
