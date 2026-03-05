@@ -8,7 +8,7 @@ export default function Home() {
       </h1>
       <div className="mt-8 space-y-6 text-lg leading-relaxed text-secondary">
         <p>
-          Builder, traveler, and indie dev. I&apos;m the cofounder of{" "}
+          Builder, traveler, and indie dev. I&apos;m the founder of{" "}
           <strong className="text-foreground">Climbing Cat</strong> and CTO at{" "}
           <strong className="text-foreground">Devil Child Studio</strong> — two
           indie studios shipping products at the intersection of AI and everyday

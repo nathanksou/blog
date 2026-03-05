@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     template: "%s | Nate Ksou",
   },
   description:
-    "Personal site of Nate Ksou — cofounder of Climbing Cat, CTO at Devil Child Studio. Travel guides, tech blog, and product showcase.",
+    "Personal site of Nate Ksou — founder of Climbing Cat, CTO at Devil Child Studio. Travel guides, tech blog, and product showcase.",
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -36,13 +36,13 @@ export const metadata: Metadata = {
     siteName: "Nate Ksou",
     title: "Nate Ksou — Builder, Traveler, Indie Dev",
     description:
-      "Personal site of Nate Ksou — cofounder of Climbing Cat, CTO at Devil Child Studio. Travel guides, tech blog, and product showcase.",
+      "Personal site of Nate Ksou — founder of Climbing Cat, CTO at Devil Child Studio. Travel guides, tech blog, and product showcase.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Nate Ksou — Builder, Traveler, Indie Dev",
     description:
-      "Personal site of Nate Ksou — cofounder of Climbing Cat, CTO at Devil Child Studio.",
+      "Personal site of Nate Ksou — founder of Climbing Cat, CTO at Devil Child Studio.",
   },
   robots: {
     index: true,
