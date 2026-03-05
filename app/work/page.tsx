@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { WaitlistForm } from "@/components/waitlist-form";
 
 export const metadata: Metadata = {
-  title: "Work",
+  title: "Projects",
   description:
     "Products by Nathan Sou — Haku's Playground, undertone, Ghostwriterrr, and Typeless.",
 };
@@ -58,7 +58,7 @@ const statusColors: Record<string, string> = {
 export default function WorkPage() {
   return (
     <div className="mx-auto max-w-[1200px] px-6 py-16 md:py-24 md:px-8">
-      <h1 className="font-serif text-4xl font-bold tracking-tight">Work</h1>
+      <h1 className="font-serif text-4xl font-bold tracking-tight">Projects</h1>
       <p className="mt-4 text-lg text-secondary">
         Products I&apos;m building across{" "}
         <a
