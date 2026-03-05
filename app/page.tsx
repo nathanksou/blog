@@ -9,19 +9,34 @@ export default function Home() {
       <div className="mt-8 space-y-6 text-lg leading-relaxed text-secondary">
         <p>
           Builder, traveler, and indie dev. I&apos;m the founder of{" "}
-          <strong className="text-foreground">Climbing Cat</strong> and CTO at{" "}
-          <strong className="text-foreground">Devil Child Studio</strong> — two
+          <a
+            href="https://climbingcat.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-foreground underline underline-offset-2 hover:text-accent"
+          >
+            climbing cat
+          </a>{" "}
+          and CTO at{" "}
+          <strong className="text-foreground">devil child studio</strong> — two
           indie studios shipping products at the intersection of AI and everyday
           tools.
         </p>
         <p>Right now I&apos;m building:</p>
         <ul className="list-disc space-y-2 pl-6">
           <li>
-            <strong className="text-foreground">Haku&apos;s Playground</strong>{" "}
+            <a
+              href="https://hakus-playground.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-foreground underline underline-offset-2 hover:text-accent"
+            >
+              Haku&apos;s Playground
+            </a>{" "}
             — an AI education app
           </li>
           <li>
-            <strong className="text-foreground">Undertone</strong> — a voice
+            <strong className="text-foreground">undertone</strong> — a voice
             assistant journal
           </li>
           <li>
@@ -29,8 +44,15 @@ export default function Home() {
             LinkedIn post generator
           </li>
           <li>
-            <strong className="text-foreground">Typeless</strong> — iOS keyboard
-            shortcuts
+            <a
+              href="https://apps.apple.com/us/app/typeless-keyboard-shortcuts/id6742476791"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-foreground underline underline-offset-2 hover:text-accent"
+            >
+              Typeless
+            </a>{" "}
+            — iOS keyboard shortcuts
           </li>
         </ul>
         <p>
@@ -40,16 +62,16 @@ export default function Home() {
       </div>
       <div className="mt-10 flex flex-wrap gap-4">
         <Link
-          href="/travel"
+          href="/blog"
           className="inline-flex items-center gap-1 rounded-full bg-foreground px-5 py-2.5 text-sm font-medium text-background transition-colors hover:bg-foreground/80"
         >
-          Read the travel guides &rarr;
+          Read the blog &rarr;
         </Link>
         <Link
-          href="/work"
+          href="/travel"
           className="inline-flex items-center gap-1 rounded-full border border-border px-5 py-2.5 text-sm font-medium transition-colors hover:bg-foreground/5"
         >
-          See what I&apos;m building &rarr;
+          Travel guides &rarr;
         </Link>
       </div>
     </div>

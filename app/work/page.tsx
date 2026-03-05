@@ -4,22 +4,22 @@ import { WaitlistForm } from "@/components/waitlist-form";
 export const metadata: Metadata = {
   title: "Work",
   description:
-    "Products by Nathan Sou — Haku's Playground, Undertone, Ghostwriterrr, and Typeless.",
+    "Products by Nathan Sou — Haku's Playground, undertone, Ghostwriterrr, and Typeless.",
 };
 
 const products = [
   {
     name: "Haku's Playground",
-    studio: "Climbing Cat",
+    studio: "climbing cat",
     description:
-      "An AI-powered education app that makes learning interactive and fun. Built by Climbing Cat.",
+      "An AI-powered education app that makes learning interactive and fun. Built by climbing cat.",
     status: "Live" as const,
     cta: { label: "Try it", href: "https://hakus-playground.vercel.app" },
     waitlist: false,
   },
   {
-    name: "Undertone",
-    studio: "Climbing Cat",
+    name: "undertone",
+    studio: "climbing cat",
     description:
       "A voice assistant journal that listens, suggests, and takes action — from creating calendar events to capturing ideas on the go. Launching end of March 2026.",
     status: "Pre-launch" as const,
@@ -28,20 +28,23 @@ const products = [
   },
   {
     name: "Ghostwriterrr",
-    studio: "Devil Child Studio",
+    studio: "devil child studio",
     description:
-      "Write, schedule, and publish LinkedIn posts with AI. Your ghostwriter for professional content. Built by Devil Child Studio. Launching end of March 2026.",
+      "Write, schedule, and publish LinkedIn posts with AI. Your ghostwriter for professional content. Built by devil child studio. Launching end of March 2026.",
     status: "Beta" as const,
     cta: null,
     waitlist: true,
   },
   {
     name: "Typeless",
-    studio: "Devil Child Studio",
+    studio: "devil child studio",
     description:
       "Keyboard shortcuts for iOS — type faster with custom text expansions. Available on the App Store.",
     status: "Live" as const,
-    cta: null,
+    cta: {
+      label: "App Store",
+      href: "https://apps.apple.com/us/app/typeless-keyboard-shortcuts/id6742476791",
+    },
     waitlist: false,
   },
 ];
@@ -57,7 +60,16 @@ export default function WorkPage() {
     <div className="mx-auto max-w-[1200px] px-6 py-16 md:py-24 md:px-8">
       <h1 className="font-serif text-4xl font-bold tracking-tight">Work</h1>
       <p className="mt-4 text-lg text-secondary">
-        Products I&apos;m building across Climbing Cat and Devil Child Studio.
+        Products I&apos;m building across{" "}
+        <a
+          href="https://climbingcat.dev"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline underline-offset-2 hover:text-foreground"
+        >
+          climbing cat
+        </a>{" "}
+        and devil child studio.
       </p>
       <div className="mt-10 space-y-6">
         {products.map((product) => (

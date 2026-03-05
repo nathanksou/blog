@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     template: "%s | Nathan Sou",
   },
   description:
-    "Personal site of Nathan Sou — founder of Climbing Cat, CTO at Devil Child Studio. Travel guides, tech blog, and product showcase.",
+    "Personal site of Nathan Sou — founder of climbing cat, CTO at devil child studio. Travel guides, tech blog, and product showcase.",
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -36,13 +36,13 @@ export const metadata: Metadata = {
     siteName: "Nathan Sou",
     title: "Nathan Sou — Builder, Traveler, Indie Dev",
     description:
-      "Personal site of Nathan Sou — founder of Climbing Cat, CTO at Devil Child Studio. Travel guides, tech blog, and product showcase.",
+      "Personal site of Nathan Sou — founder of climbing cat, CTO at devil child studio. Travel guides, tech blog, and product showcase.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Nathan Sou — Builder, Traveler, Indie Dev",
     description:
-      "Personal site of Nathan Sou — founder of Climbing Cat, CTO at Devil Child Studio.",
+      "Personal site of Nathan Sou — founder of climbing cat, CTO at devil child studio.",
   },
   robots: {
     index: true,
