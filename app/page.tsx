@@ -44,7 +44,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="font-semibold text-foreground underline underline-offset-2 hover:text-accent"
               >
-                ghostwriterrr
+                ghostwriter
               </a>{" "}
               — an AI linkedin post generator
             </li>
