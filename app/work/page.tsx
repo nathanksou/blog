@@ -41,9 +41,7 @@ const products = [
 export default function WorkPage() {
   return (
     <div className="mx-auto max-w-[1200px] px-6 py-16 md:py-24 md:px-8">
-      <h1 className="font-serif text-4xl font-bold tracking-tight">
-        projects
-      </h1>
+      <h1 className="font-serif text-4xl font-bold tracking-tight">projects</h1>
       <p className="mt-4 text-lg text-secondary">
         products i&apos;m building across{" "}
         <a
@@ -63,6 +61,7 @@ export default function WorkPage() {
         >
           devil child studio
         </a>
+        .
       </p>
       <div className="mt-10 grid gap-6 sm:grid-cols-2">
         {products.map((product) => (
@@ -79,7 +78,7 @@ export default function WorkPage() {
                   rel="noopener noreferrer"
                   className="shrink-0 text-xs font-medium uppercase tracking-wider text-accent hover:underline"
                 >
-                  {product.cta.label} &nearr;
+                  {product.cta.label} {"\u2197"}
                 </a>
               ) : (
                 <span className="shrink-0 text-xs font-medium uppercase tracking-wider text-secondary">
@@ -89,9 +88,7 @@ export default function WorkPage() {
                 </span>
               )}
             </div>
-            <p className="mt-1 text-sm text-secondary">
-              {product.description}
-            </p>
+            <p className="mt-1 text-sm text-secondary">{product.description}</p>
             {product.waitlist && <WaitlistForm product={product.name} />}
           </div>
         ))}
