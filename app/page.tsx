@@ -7,8 +7,13 @@ export default function Home() {
         Hey, I&apos;m Nate.
       </h1>
       <div className="mt-8 space-y-6 text-lg leading-relaxed text-secondary">
+        <p>builder, traveler, and indie dev</p>
         <p>
-          Builder, traveler, and indie dev. I&apos;m the founder of{" "}
+          building products and agents at the intersection of AI and everyday
+          tools
+        </p>
+        <p>
+          founder of{" "}
           <a
             href="https://climbingcat.dev"
             target="_blank"
@@ -18,9 +23,7 @@ export default function Home() {
             climbing cat
           </a>{" "}
           and CTO at{" "}
-          <strong className="text-foreground">devil child studio</strong> — two
-          indie studios shipping products at the intersection of AI and everyday
-          tools.
+          <strong className="text-foreground">devil child studio</strong>
         </p>
         <p>Right now I&apos;m building:</p>
         <ul className="list-disc space-y-2 pl-6">
