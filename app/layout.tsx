@@ -21,33 +21,28 @@ const jetbrains = JetBrains_Mono({
   subsets: ["latin"],
 });
 
+const siteTitle = "nathan sou — builder, traveler, indie dev";
+const siteDescription =
+  "personal site of nathan sou — founder of climbing cat, cto at devil child studio. travel guides, tech blog, and product showcase.";
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://nathansou.com"),
-  title: {
-    default: "nathan sou — builder, traveler, indie dev",
-    template: "%s | nathan sou",
-  },
-  description:
-    "Personal site of nathan sou — founder of climbing cat, cto at devil child studio. travel guides, tech blog, and product showcase.",
+  title: { default: siteTitle, template: "%s | nathan sou" },
+  description: siteDescription,
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://nathansou.com",
     siteName: "nathan sou",
-    title: "nathan sou — builder, traveler, indie dev",
-    description:
-      "Personal site of nathan sou — founder of climbing cat, cto at devil child studio. travel guides, tech blog, and product showcase.",
+    title: siteTitle,
+    description: siteDescription,
   },
   twitter: {
     card: "summary_large_image",
-    title: "nathan sou — builder, traveler, indie dev",
-    description:
-      "Personal site of nathan sou — founder of climbing cat, cto at devil child studio.",
+    title: siteTitle,
+    description: siteDescription,
   },
-  robots: {
-    index: true,
-    follow: true,
-  },
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({

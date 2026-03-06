@@ -60,7 +60,9 @@ export function getTravelGuides(): ContentItem<TravelFrontmatter>[] {
 export function getTravelGuide(
   slug: string
 ): ContentItem<TravelFrontmatter> | undefined {
-  return getTravelGuides().find((g) => g.slug === slug);
+  return getContentFromDirectory<TravelFrontmatter>("travel").find(
+    (g) => g.slug === slug
+  );
 }
 
 export function getBlogPosts(): ContentItem<BlogFrontmatter>[] {
@@ -75,5 +77,7 @@ export function getBlogPosts(): ContentItem<BlogFrontmatter>[] {
 export function getBlogPost(
   slug: string
 ): ContentItem<BlogFrontmatter> | undefined {
-  return getBlogPosts().find((p) => p.slug === slug);
+  return getContentFromDirectory<BlogFrontmatter>("blog").find(
+    (p) => p.slug === slug
+  );
 }

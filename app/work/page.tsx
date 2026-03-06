@@ -7,7 +7,15 @@ export const metadata: Metadata = {
     "products by nathan sou — haku's playground, undertone, ghostwriter, and typeless.",
 };
 
-const products = [
+interface Product {
+  name: string;
+  description: string;
+  cta: { label: string; href: string } | null;
+  statusLabel?: string;
+  waitlist: boolean;
+}
+
+const products: Product[] = [
   {
     name: "haku's playground",
     description: "a playful guide to ai",
@@ -24,7 +32,7 @@ const products = [
     name: "undertone",
     description: "your inner voice, illuminated",
     cta: null,
-    ctaLabel: "coming soon",
+    statusLabel: "coming soon",
     waitlist: true,
   },
   {
@@ -82,9 +90,7 @@ export default function WorkPage() {
                 </a>
               ) : (
                 <span className="shrink-0 text-xs font-medium tracking-wide text-secondary">
-                  {"ctaLabel" in product
-                    ? (product as { ctaLabel: string }).ctaLabel
-                    : ""}
+                  {product.statusLabel}
                 </span>
               )}
             </div>
