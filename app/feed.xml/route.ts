@@ -1,8 +1,8 @@
-import { gettravelGuides, getBlogPosts } from "@/lib/mdx";
+import { getTravelGuides, getBlogPosts } from "@/lib/mdx";
 
 export async function GET() {
   const baseUrl = "https://nathansou.com";
-  const guides = gettravelGuides();
+  const guides = getTravelGuides();
   const posts = getBlogPosts();
 
   const items = [
