@@ -36,7 +36,7 @@ export async function GET(request: NextRequest) {
             color: "#666666",
           }}
         >
-          nathansou.com
+          nathanksou.dev
         </div>
       </div>
     ),

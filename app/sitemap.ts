@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { getTravelGuides, getBlogPosts } from "@/lib/mdx";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://nathansou.com";
+  const baseUrl = "https://nathanksou.dev";
 
   const travelGuides = getTravelGuides().map((guide) => ({
     url: `${baseUrl}/travel/${guide.slug}`,

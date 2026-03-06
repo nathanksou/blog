@@ -26,13 +26,13 @@ const siteDescription =
   "personal site of nathan sou — founder of climbing cat, cto at devil child studio. travel guides, tech blog, and product showcase.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nathansou.com"),
+  metadataBase: new URL("https://nathanksou.dev"),
   title: { default: siteTitle, template: "%s | nathan sou" },
   description: siteDescription,
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://nathansou.com",
+    url: "https://nathanksou.dev",
     siteName: "nathan sou",
     title: siteTitle,
     description: siteDescription,

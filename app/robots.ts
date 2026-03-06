@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://nathansou.com/sitemap.xml",
+    sitemap: "https://nathanksou.dev/sitemap.xml",
   };
 }

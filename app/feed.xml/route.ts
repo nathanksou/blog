@@ -1,7 +1,7 @@
 import { getTravelGuides, getBlogPosts } from "@/lib/mdx";
 
 export async function GET() {
-  const baseUrl = "https://nathansou.com";
+  const baseUrl = "https://nathanksou.dev";
   const guides = getTravelGuides();
   const posts = getBlogPosts();
 
