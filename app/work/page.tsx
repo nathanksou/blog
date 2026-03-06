@@ -76,12 +76,12 @@ export default function WorkPage() {
                   href={product.cta.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="shrink-0 text-xs font-medium uppercase tracking-wider text-accent hover:underline"
+                  className="shrink-0 text-xs font-medium tracking-wide text-accent hover:underline"
                 >
                   {product.cta.label} {"\u2197"}
                 </a>
               ) : (
-                <span className="shrink-0 text-xs font-medium uppercase tracking-wider text-secondary">
+                <span className="shrink-0 text-xs font-medium tracking-wide text-secondary">
                   {"ctaLabel" in product
                     ? (product as { ctaLabel: string }).ctaLabel
                     : ""}
