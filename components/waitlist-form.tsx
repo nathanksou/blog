@@ -7,10 +7,12 @@ export function WaitlistForm({ product }: { product: string }) {
   const [status, setStatus] = useState<
     "idle" | "loading" | "success" | "error"
   >("idle");
+  const [errorMessage, setErrorMessage] = useState("");
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     setStatus("loading");
+    setErrorMessage("");
 
     try {
       const res = await fetch("/api/waitlist", {
@@ -23,9 +25,12 @@ export function WaitlistForm({ product }: { product: string }) {
         setStatus("success");
         setEmail("");
       } else {
+        const data = await res.json();
+        setErrorMessage(data.error || "something went wrong");
         setStatus("error");
       }
     } catch {
+      setErrorMessage("something went wrong. try again.");
       setStatus("error");
     }
   }
@@ -39,27 +44,27 @@ export function WaitlistForm({ product }: { product: string }) {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="mt-4 flex gap-2">
-      <input
-        type="email"
-        required
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        placeholder="you@email.com"
-        className="h-10 flex-1 rounded-lg border border-border bg-surface px-3 text-sm outline-none transition-colors placeholder:text-secondary/60 focus:border-accent"
-      />
-      <button
-        type="submit"
-        disabled={status === "loading"}
-        className="h-10 rounded-lg bg-foreground px-4 text-sm font-medium text-background transition-colors hover:bg-foreground/80 disabled:opacity-50"
-      >
-        {status === "loading" ? "joining..." : "join waitlist"}
-      </button>
+    <div className="mt-4">
       {status === "error" && (
-        <p className="self-center text-sm text-red-600">
-          something went wrong. try again.
-        </p>
+        <p className="mb-2 text-sm text-red-600">{errorMessage}</p>
       )}
-    </form>
+      <form onSubmit={handleSubmit} className="flex gap-2">
+        <input
+          type="email"
+          required
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="you@email.com"
+          className="h-10 flex-1 rounded-lg border border-border bg-surface px-3 text-sm outline-none transition-colors placeholder:text-secondary/60 focus:border-accent"
+        />
+        <button
+          type="submit"
+          disabled={status === "loading"}
+          className="h-10 rounded-lg bg-foreground px-4 text-sm font-medium text-background transition-colors hover:bg-foreground/80 disabled:opacity-50"
+        >
+          {status === "loading" ? "joining..." : "join waitlist"}
+        </button>
+      </form>
+    </div>
   );
 }

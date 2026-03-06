@@ -5,7 +5,7 @@ export async function POST(request: NextRequest) {
 
   if (!email || !product) {
     return NextResponse.json(
-      { error: "Email and product are required" },
+      { error: "email and product are required" },
       { status: 400 }
     );
   }
@@ -15,7 +15,7 @@ export async function POST(request: NextRequest) {
 
   if (!notionApiKey || !databaseId) {
     return NextResponse.json(
-      { error: "Server configuration error" },
+      { error: "server configuration error" },
       { status: 500 }
     );
   }
@@ -32,23 +32,20 @@ export async function POST(request: NextRequest) {
         parent: { database_id: databaseId },
         properties: {
           Email: {
-            title: [{ text: { content: email } }],
+            rich_text: [{ text: { content: email } }],
           },
-          Product: {
-            select: { name: product },
-          },
-          "Signed Up": {
-            date: { start: new Date().toISOString() },
+          Name: {
+            title: [{ text: { content: product } }],
           },
         },
       }),
     });
 
     if (!response.ok) {
-      const error = await response.json();
-      console.error("Notion API error:", error);
+      const err = await response.json();
+      console.error("Notion API error:", err);
       return NextResponse.json(
-        { error: "Failed to join waitlist" },
+        { error: err.message || "failed to join waitlist" },
         { status: 500 }
       );
     }
@@ -57,7 +54,7 @@ export async function POST(request: NextRequest) {
   } catch (error) {
     console.error("Waitlist error:", error);
     return NextResponse.json(
-      { error: "Failed to join waitlist" },
+      { error: "failed to join waitlist" },
       { status: 500 }
     );
   }
