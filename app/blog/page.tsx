@@ -19,17 +19,17 @@ export default function BlogPage() {
           coming soon. i&apos;ll be writing about building with ai, indie dev
           life, and the tools i use to ship fast.
         </p>
-        <p className="mt-4 text-lg text-secondary">
-          want to know when i publish?{" "}
+        <div className="mt-4 text-lg text-secondary">
+          <p>want to know when i publish?</p>
           <a
             href="https://x.com/nathanksou"
             className="text-accent underline underline-offset-2"
             target="_blank"
             rel="noopener noreferrer"
           >
-            follow me on X &rarr;
+            follow me on x &rarr;
           </a>
-        </p>
+        </div>
       </div>
     );
   }

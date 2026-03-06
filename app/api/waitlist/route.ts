@@ -11,7 +11,7 @@ export async function POST(request: NextRequest) {
   }
 
   const notionApiKey = process.env.NOTION_API_KEY;
-  const databaseId = process.env.NOTION_WAITLIST_DATABASE_ID;
+  const databaseId = process.env.NOTION_WAITLIST_DB_ID;
 
   if (!notionApiKey || !databaseId) {
     return NextResponse.json(
