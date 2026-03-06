@@ -19,7 +19,7 @@ const products: Product[] = [
   {
     name: "haku's playground",
     description: "a playful guide to ai",
-    cta: { label: "learn more", href: "https://hakus-playground.vercel.app" },
+    cta: { label: "learn more", href: "https://playground.climbingcat.dev" },
     waitlist: false,
   },
   {
