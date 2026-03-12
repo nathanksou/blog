@@ -19,6 +19,7 @@ export interface BlogFrontmatter {
   description: string;
   date: string;
   tags: string[];
+  image?: string;
   readingTime?: string;
 }
 

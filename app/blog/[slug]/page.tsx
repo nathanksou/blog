@@ -17,10 +17,22 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   return {
     title: post.frontmatter.title,
     description: post.frontmatter.description,
+    alternates: {
+      canonical: `https://nathanksou.dev/blog/${slug}`,
+    },
     openGraph: {
       title: post.frontmatter.title,
       description: post.frontmatter.description,
       type: "article",
+      publishedTime: post.frontmatter.date,
+      url: `https://nathanksou.dev/blog/${slug}`,
+      ...(post.frontmatter.image && { images: [{ url: post.frontmatter.image }] }),
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.frontmatter.title,
+      description: post.frontmatter.description,
+      ...(post.frontmatter.image && { images: [post.frontmatter.image] }),
     },
   };
 }
