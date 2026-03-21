@@ -1,0 +1,160 @@
+---
+title: "The Beginner's Guide to AI Prompt Engineering"
+description: "The 8-Part Framework that makes AI actually useful. Stop writing vague prompts and start getting results that work across Claude, ChatGPT, and Gemini."
+date: "2026-03-21"
+tags: ["ai", "prompt-engineering", "guide", "haku"]
+---
+
+I spent the first few weeks of using AI typing things like "build me this (or that) app" and while the apps were generated, they didn't always work well. I would go back and forth a lot like one normally would when talking to someone. But as I did, the results kept getting worse and worse.
+
+So I Googled it. "How to write better AI prompts." The advice I found was basically: be specific and provide context.
+
+That's like telling someone who can't cook to "use better ingredients." While technically true, it's completely useless advice.
+
+So this is the 8-Part Prompt Framework that I've found to produce good results. It's based on the work of [Ruben Hassid](https://www.linkedin.com/in/ruben-hassid/), and I teach it in [Haku's Playground](https://playground.climbingcat.dev), a free AI education platform by [climbing cat](https://climbingcat.dev). It works across Claude, ChatGPT, and Gemini, and it scales from quick questions to complex business deliverables.
+
+---
+
+## What Prompt Engineering Actually Is
+
+Prompt engineering is the skill of writing instructions that get AI to do what you actually want.
+
+An AI model has read more text than any human ever will, but it has zero context about your specific situation. It doesn't know your company, your audience, your standards, or what you mean by "good." Your job is to close that gap.
+
+You don't need to be technical. You don't need to understand how neural networks work. You just need to be clear about what you want and systematic about how you ask for it.
+
+I learned this the hard way. I'm an engineer, and even I was writing terrible prompts for months before I found a system that worked.
+
+---
+
+## The 8-Part Prompt Framework
+
+Think of this like a packing list for a hike. You don't bring all your gear for a walk around the block. But for a serious trail, having a checklist means you never forget the essentials.
+
+You don't need all eight parts every time (more on that below). But knowing all eight means you always have the right tool when the task demands it.
+
+### 1. Task
+
+Start with what you want and what success looks like.
+
+The formula: **"I want to [TASK] so that [SUCCESS CRITERIA]."**
+
+The second half is the part most people skip. "Write a blog post" gives the AI nothing to aim at. "Write a blog post so that readers understand our pricing change and feel confident upgrading" gives it a target. That "so that" changes everything.
+
+Start with an action verb: Write, Create, Analyze, Compare, Explain, Draft, Review. This forces you to be specific about the deliverable.
+
+A note on role prompting: you've probably seen advice like "Act as a senior marketing expert." You don't necessarily need this anymore. Modern AI models already bring expertise. Telling them to role-play doesn't necessarily improve output, but you can add it to your prompt if that helps you. It's more important to define the task at hand.
+
+### 2. Context Files
+
+This is the single biggest lever in the entire framework, and almost nobody uses it.
+
+Instead of trying to cram your entire business context into a prompt, put your knowledge into files and upload them. Claude can handle 200,000 tokens of context. That's roughly 500 pages. Use it.
+
+"First, read these files completely before responding:"
+
+- brand-voice.md (your tone, vocabulary, writing rules)
+- product-overview.md (what you sell and who you sell it to)
+- audience-research.md (customer interviews, pain points)
+
+Here's the thing most people miss: **a simple prompt paired with great context files will outperform a "perfect" prompt with no context every single time.** Stop obsessing over prompt wording. Start building your context library.
+
+### 3. Reference
+
+Context is background information. Reference is "this is what good looks like."
+
+Upload an example of the output you want, then reverse-engineer the patterns. Don't just say "give me something like this" and hope the AI figures it out. Extract the blueprint. Format each rule starting with "Always" or "Never":
+
+- "Always open with a one-sentence hook before the main content"
+- "Never use more than two sentences per paragraph"
+- "Always end sections with a concrete action the reader can take"
+
+AI models are exceptional pattern matchers. Hand them an explicit pattern and they'll reproduce the quality consistently.
+
+### 4. Brief
+
+This is your success specification, and it's the only part you should be typing from scratch each time. Everything else should be in files.
+
+A good brief covers the type of output and length ("a 500-word product announcement email"), the intended reaction ("the reader should feel excited to try the new feature"), what it should NOT sound like ("generic AI, too casual, jargon-heavy"), and what success means ("the recipient clicks the CTA button").
+
+That "does not sound like" line is surprisingly effective. Negative constraints narrow the output space immediately. I use it in almost every prompt now.
+
+### 5. Rules
+
+Non-negotiable constraints. The brief is what the client wants. Rules are the legal requirements. You might adjust a brief based on feedback, but rules don't bend.
+
+These work best when kept in a context file rather than typed into every prompt. Then in your prompt, add: "Read my rules file fully before starting. If you are about to break one of my rules, stop and tell me."
+
+That last sentence is key. It turns the AI into a self-checking system. Instead of silently violating your constraints, it flags the conflict and asks how to proceed.
+
+### 6. Conversation
+
+You spent years prompting AI. Now it prompts you.
+
+This is the biggest mindset shift in the framework. Instead of firing off a prompt and accepting whatever comes back, you tell the AI: "DO NOT start executing yet. Ask me clarifying questions so we can refine the approach together step by step."
+
+Now the AI interviews *you*. It asks the questions you forgot to answer. It surfaces assumptions you didn't realize you were making. It finds gaps in your brief.
+
+This flips the old model on its head. You're no longer the sole prompt engineer. You and the AI are collaborating to build the best possible prompt *together* before any work begins. Two minutes of back-and-forth saves twenty minutes of revisions. I use this step on almost every important task now, and the first-draft quality difference is dramatic.
+
+### 7. Plan
+
+For complex tasks, force the AI to prove it understood your context before it starts writing:
+
+"Before you write anything, list the 3 rules from my context file that matter most for this task. Then give me your execution plan."
+
+This is a checkpoint. If the plan looks wrong, you catch it before the AI writes 2,000 words in the wrong direction. A two-minute review of a plan saves twenty minutes of revisions on a full draft. Think of it as reviewing the blueprint before construction starts.
+
+### 8. Alignment
+
+The final gate: "Only begin work once we have aligned."
+
+This prevents the AI from racing ahead before you've confirmed the plan. It's a small addition that solves a very common problem: the AI gets eager and starts executing halfway through its own planning. Alignment replaces the old prompting cycle of send, hope, revise five times. You invest the time upfront so the first draft is dramatically closer to the final version. Often it *is* the final version.
+
+---
+
+## You Don't Always Need All Eight
+
+The framework scales with the task. That's the whole point.
+
+**Quick questions (1-2 parts: Task only).** "Summarize this article in 3 bullet points." For simple, low-stakes requests, a clear task is all you need.
+
+**Standard tasks (3-4 parts: Task + Context + Brief).** "Write a follow-up email to a client. Here's the project context: [file]. Keep it under 150 words, friendly but direct." Most daily work lives here.
+
+**Important work (5-8 parts: Full framework).** PRDs, business proposals, complex code, hiring processes: anything where getting it wrong costs real time or money. The extra setup (maybe 5 minutes) saves hours of revision.
+
+The pattern is simple: **the higher the stakes, the more parts you use.**
+
+---
+
+## The Mistakes I See Constantly
+
+I built [Haku's Playground](https://playground.climbingcat.dev) to teach complete beginners how to use AI effectively. After teaching people, the same mistakes come up over and over.
+
+**Pasting everything inline instead of using files.** If your prompt is 2,000 words of context followed by a one-line ask, you're doing it backwards. Put the context in files. Keep the prompt clean.
+
+**No success criteria.** "Write a blog post" is not a prompt. "Write a blog post so that readers understand our pricing change" is a prompt. The "so that" forces you to define what good looks like.
+
+**Skipping the conversation step.** This is the one that hurts the most. Letting the AI ask questions before it starts working almost always improves the final output. You're leaving quality on the table every time you skip it.
+
+**Accepting the first response.** The first draft from AI is a starting point, not a finished product. Always review.
+
+**Giving up instead of refining.** When the output isn't right, don't delete the conversation and start fresh. Instead steer with follow-ups: "Make the tone more direct" or "Cut this section and expand that one." The AI learns from the conversation history. Then ask for a compacted output from the conversation. Take that output, open a new chat session, and paste that in as context. Again, context is king.
+
+**Skipping the plan on complex tasks.** A wrong plan caught early costs nothing. A wrong plan executed fully costs everything.
+
+---
+
+## Try It Yourself
+
+The best way to learn this is to practice it on something real. Take a task you're working on today, run it through the framework, and see the difference.
+
+If you want to drill the framework until it's second nature, [Haku's Adventure](https://adventure.climbingcat.dev) is a typing game that teaches you the 8 prompt parts through muscle memory. Think MonkeyType, but instead of random words you're typing the building blocks of great prompts. It's fast, free, and oddly addicting.
+
+For the full deep dive, [Haku's Playground](https://playground.climbingcat.dev) is a free interactive course that teaches this framework and a lot more across 20 lessons, from AI fundamentals to building agentic systems. The 8-Part Prompt Framework is taught in Lesson 3, but don't skip Lessons 1-2. Understanding how AI actually works makes you a dramatically better prompter.
+
+I'm an engineer who quit his job to build AI tools full-time, and I'm documenting everything I learn about building, shipping, and distributing products along the way. If any of this was useful, follow the journey.
+
+-> Follow me on [LinkedIn](https://linkedin.com/in/natecard)
+-> Try [Haku's Playground](https://playground.climbingcat.dev)
+-> Practice with [Haku's Adventure](https://adventure.climbingcat.dev)
